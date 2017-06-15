@@ -19,6 +19,8 @@ app.use(webpackMiddleware(compiler, {
     publicPath: webpackConf.output.publicPath
 }));
 
+app.use(require("webpack-hot-middleware")(compiler));
+
 app.get("/", function(req, res) {
     res.render("index");
 });

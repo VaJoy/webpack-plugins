@@ -7,9 +7,6 @@ module.exports = {
     output: {
         publicPath: "/assets/",
         filename: 'bundle.js',
-        path: '/'
-    },
-    node: {
-        __dirname: false
+        //path: '/'   //只使用 dev-middleware 可以忽略本属性
     }
 };
