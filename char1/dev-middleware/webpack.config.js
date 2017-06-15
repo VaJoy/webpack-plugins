@@ -7,6 +7,6 @@ module.exports = {
     output: {
         publicPath: "/assets/",
         filename: 'bundle.js',
-        //path: '/'   //Ö»Ê¹ÓÃ dev-middleware ¿ÉÒÔºöÂÔ±¾ÊôĞÔ
+        //path: '/'   //åªä½¿ç”¨ dev-middleware å¯ä»¥å¿½ç•¥æœ¬å±æ€§
     }
 };
