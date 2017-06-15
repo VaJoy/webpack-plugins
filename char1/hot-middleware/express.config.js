@@ -19,7 +19,9 @@ app.use(webpackMiddleware(compiler, {
     publicPath: webpackConf.output.publicPath
 }));
 
-app.use(require("webpack-hot-middleware")(compiler));
+app.use(require("webpack-hot-middleware")(compiler, {
+    path: '/__webpack_hmr'
+}));
 
 app.get("/", function(req, res) {
     res.render("index");
